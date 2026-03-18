@@ -19,14 +19,17 @@ export default function Profile() {
   const fileRef = useRef()
 
   useEffect(() => {
-    if (!user || !profile) return
-    setPrefs({ nivel_ingles: profile.nivel_ingles || 'iniciante', trilha_ativa: profile.trilha_ativa || 'data-science' })
+    if (!user) return
+    if (profile) {
+      setPrefs({ nivel_ingles: profile.nivel_ingles || 'iniciante', trilha_ativa: profile.trilha_ativa || 'data-science' })
+    }
     Promise.all([getProgress(user.id), getInterviews(user.id)])
       .then(([p, i]) => { setProgress(p); setInterviews(i) })
+      .catch(() => {})
       .finally(() => setLoading(false))
-  }, [user, profile])
+  }, [user, profile?.id])
 
-  if (!user || !profile) return (
+  if (!user) return (
     <AppLayout>
       <div className="flex justify-center items-center h-64"><Spinner size="lg"/></div>
     </AppLayout>

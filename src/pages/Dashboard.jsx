@@ -257,22 +257,23 @@ function NodeModal({ node, completed, onComplete, onClose }) {
 // ── Dashboard ──────────────────────────────────────────────
 export default function Dashboard() {
   const { user, profile, refreshProfile } = useAuth()
-  const [activeTrail, setActiveTrail] = useState(null)
+  const [activeTrail, setActiveTrail] = useState(ALL_TRAILS[0])
   const [completedIds, setCompletedIds] = useState(new Set())
   const [selectedNode, setSelectedNode] = useState(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const trail = ALL_TRAILS.find(t => t.id === (profile?.trilha_ativa || 'data-science')) || ALL_TRAILS[0]
+    if (!profile) return
+    const trail = ALL_TRAILS.find(t => t.id === profile.trilha_ativa) || ALL_TRAILS[0]
     setActiveTrail(trail)
-  }, [profile])
+  }, [profile?.trilha_ativa])
 
   useEffect(() => {
-    if (!user) return
-    getProgress(user.id).then(data => {
-      setCompletedIds(new Set(data.map(d => d.node_id)))
-      setLoading(false)
-    })
+    if (!user) { setLoading(false); return }
+    getProgress(user.id)
+      .then(data => setCompletedIds(new Set(data.map(d => d.node_id))))
+      .catch(() => {})
+      .finally(() => setLoading(false))
   }, [user])
 
   async function handleComplete(node, correctCount, totalExercises) {
@@ -283,8 +284,6 @@ export default function Dashboard() {
     if (newXP) refreshProfile({ xp: newXP })
     toast.success(`✅ "${node.title}" completo! +15 XP`)
   }
-
-  if (!activeTrail) return <AppLayout><div className="flex justify-center items-center h-64"><Spinner size="lg"/></div></AppLayout>
 
   const allNodes = Object.values(activeTrail.levels).flat()
   const completedInTrail = allNodes.filter(n => completedIds.has(n.id)).length
