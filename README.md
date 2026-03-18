@@ -1,44 +1,71 @@
 # ⚡ LearnPath
 
-> Trilhas de aprendizado em Data Science, GenAI e Programação — baseadas nos melhores livros técnicos do mercado.
+> Plataforma de aprendizado de tecnologia com foco em **inglês técnico**. Trilhas de Data Science, GenAI, Programação e Estatística — baseadas nos melhores livros do mercado.
 
-[![React](https://img.shields.io/badge/React-18-61dafb?logo=react)](https://react.dev)
-[![Vite](https://img.shields.io/badge/Vite-5-646cff?logo=vite)](https://vitejs.dev)
-[![Supabase](https://img.shields.io/badge/Supabase-Database-3ecf8e?logo=supabase)](https://supabase.com)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-06b6d4?logo=tailwindcss)](https://tailwindcss.com)
+[![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-5-646cff?logo=vite&logoColor=white)](https://vitejs.dev)
+[![Supabase](https://img.shields.io/badge/Supabase-Database-3ecf8e?logo=supabase&logoColor=white)](https://supabase.com)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind-3-06b6d4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 
 ---
 
-## 📖 Sobre o projeto
+## 📖 Sobre o Projeto
 
-**LearnPath** é uma plataforma de trilhas de aprendizado progressivas para quem quer entrar ou crescer nas áreas de tecnologia e ciência de dados. O diferencial é o conteúdo: cada módulo é baseado em capítulos de livros técnicos reais, não em conteúdo gerado genericamente.
+O **LearnPath** foi criado para profissionais brasileiros que querem aprender tecnologia **e** melhorar o inglês técnico ao mesmo tempo. Cada módulo de trilha inclui:
 
-### 📚 Fontes bibliográficas
+- O conteúdo técnico do tópico
+- Vocabulário com pronúncia em IPA
+- Tradução e exemplos de uso real
+- Frases práticas para o dia a dia profissional
+- Exercícios de fixação baseados no livro de referência
+
+### 📚 Fontes Bibliográficas
 
 | Livro | Autor(es) | Trilha |
 |-------|-----------|--------|
 | *Data Science from Scratch* | Joel Grus (O'Reilly, 2015) | Data Science + Programação |
 | *Deep Learning* | Goodfellow, Bengio, Courville (MIT Press, 2016) | GenAI |
-| *OpenIntro Statistics* | Diez, Çetinkaya-Rundel, Barr (4ª ed.) | Data Science |
+| *OpenIntro Statistics* | Diez, Çetinkaya-Rundel, Barr (4ª ed.) | Estatística + Data Science |
 | *Natural Language Processing with Transformers* | Tunstall et al. (O'Reilly, 2022) | GenAI |
-
-> **Quer adicionar mais conteúdo?** Veja a seção [Contribuindo](#-contribuindo).
 
 ---
 
 ## ✨ Funcionalidades
 
-- **🗺️ Trilhas visuais** — Árvore de aprendizado com módulos desbloqueáveis por pré-requisitos
-- **📊 3 áreas principais** — Data Science, GenAI e Programação
-- **🎯 3 níveis por área** — Iniciante → Intermediário → Avançado
-- **✍️ Exercícios** — Questões baseadas no conteúdo dos livros, com feedback imediato
-- **🇺🇸 Foco em inglês técnico** — Cada módulo lista o vocabulário técnico em inglês da área
-- **🎤 Entrevistas técnicas** — Perguntas reais de entrevista com respostas modelo
-- **➕ Cursos personalizados** — Adicione seus próprios recursos de estudo
-- **🏆 Ranking global** — Competição saudável por XP
-- **⚡ Gamificação** — XP, níveis e títulos progressivos
-- **🔐 Autenticação** — Registro com confirmação de email via Supabase Auth
-- **📱 Responsivo** — Mobile e desktop
+### 🗺️ Trilhas de Aprendizado
+- **4 trilhas:** Data Science · GenAI & LLMs · Programação · Estatística
+- **3 níveis por trilha:** Iniciante → Intermediário → Avançado
+- **50+ módulos** com sistema de pré-requisitos (desbloqueio progressivo)
+- Cada módulo: tópicos, vocabulário EN/PT, pronúncia, frases, exercícios e fonte
+
+### 🇺🇸 Inglês Técnico Integrado
+- **Flashcards** com pronúncia IPA e tradução
+- **Quiz de vocabulário** com múltipla escolha
+- **Guia de pronúncia** com exemplos reais
+- Frases práticas para reuniões, apresentações e entrevistas
+
+### 🎤 Simulador de Entrevistas
+- **20+ vagas** por área (Data Scientist, ML Engineer, LLM Engineer...)
+- Perguntas em inglês por nível (iniciante, intermediário, avançado)
+- Avaliação automática de gramática, vocabulário, clareza e relevância
+- Feedback detalhado com dicas de melhoria e nota por resposta
+- Histórico de entrevistas com evolução
+
+### 🏆 Gamificação
+- XP por ação (módulo: +15, exercício correto: +10, entrevista: variável)
+- Níveis de 1 a 100 com títulos progressivos
+- Ranking global com pódio e filtro por trilha
+
+### 👤 Perfil
+- Upload de foto de perfil
+- Estatísticas detalhadas (módulos, entrevistas, XP)
+- Preferências de trilha e nível de inglês
+- Histórico de progresso
+
+### ➕ Cursos Personalizados
+- Adicione seus próprios recursos (cursos, livros, tutoriais)
+- Categorização por área e nível
+- Links para recursos externos
 
 ---
 
@@ -48,28 +75,24 @@
 |--------|-----------|
 | Frontend | React 18 + Vite 5 |
 | Estilo | Tailwind CSS 3 |
-| Auth + DB | Supabase (PostgreSQL) |
+| Auth + DB | Supabase (PostgreSQL + Auth + Storage) |
 | Roteamento | React Router v6 |
 | Notificações | react-hot-toast |
+| Fontes | Plus Jakarta Sans + Syne + JetBrains Mono |
 
 ---
 
-## 🚀 Como rodar localmente
+## 🚀 Como Rodar Localmente
 
-### 1. Clone o repositório
+### 1. Clone e instale
 
 ```bash
 git clone https://github.com/seu-usuario/learnpath.git
 cd learnpath
-```
-
-### 2. Instale as dependências
-
-```bash
 npm install
 ```
 
-### 3. Configure as variáveis de ambiente
+### 2. Configure o ambiente
 
 ```bash
 cp .env.example .env
@@ -78,29 +101,38 @@ cp .env.example .env
 Preencha o `.env`:
 
 ```env
-VITE_SUPABASE_URL=https://sua-url.supabase.co
-VITE_SUPABASE_ANON_KEY=sua-chave-anon-publica
+VITE_SUPABASE_URL=https://seu-projeto.supabase.co
+VITE_SUPABASE_ANON_KEY=sua_chave_anon_publica
 ```
 
-### 4. Configure o banco de dados
+### 3. Configure o banco de dados
 
-Execute o SQL abaixo no **SQL Editor** do seu projeto Supabase:
+Execute no **SQL Editor** do seu projeto Supabase:
 
 ```sql
--- Perfis de usuário
+-- Apaga tabelas antigas (cuidado em produção!)
+DROP TABLE IF EXISTS entrevistas CASCADE;
+DROP TABLE IF EXISTS cursos_usuario CASCADE;
+DROP TABLE IF EXISTS vocab_resultado CASCADE;
+DROP TABLE IF EXISTS exercicios_resultado CASCADE;
+DROP TABLE IF EXISTS progresso CASCADE;
+DROP TABLE IF EXISTS profiles CASCADE;
+
+-- Cria tabelas
 CREATE TABLE profiles (
   id UUID REFERENCES auth.users ON DELETE CASCADE PRIMARY KEY,
   nome TEXT NOT NULL,
   username TEXT UNIQUE NOT NULL,
   email TEXT NOT NULL,
   xp INTEGER DEFAULT 0,
+  nivel_ingles TEXT DEFAULT 'iniciante',
   nivel_escolhido TEXT DEFAULT 'iniciante',
   trilha_ativa TEXT DEFAULT 'data-science',
+  foto_url TEXT,
   created_at TIMESTAMPTZ DEFAULT NOW(),
   updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Progresso nas trilhas
 CREATE TABLE progresso (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id UUID REFERENCES profiles(id) ON DELETE CASCADE,
@@ -109,17 +141,22 @@ CREATE TABLE progresso (
   completed_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Resultado de exercícios
 CREATE TABLE exercicios_resultado (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id UUID REFERENCES profiles(id) ON DELETE CASCADE,
   node_id TEXT NOT NULL,
-  exercise_id TEXT NOT NULL,
   correct BOOLEAN NOT NULL,
   answered_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Cursos personalizados do usuário
+CREATE TABLE vocab_resultado (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  user_id UUID REFERENCES profiles(id) ON DELETE CASCADE,
+  word_id TEXT NOT NULL,
+  correct BOOLEAN NOT NULL,
+  answered_at TIMESTAMPTZ DEFAULT NOW()
+);
+
 CREATE TABLE cursos_usuario (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id UUID REFERENCES profiles(id) ON DELETE CASCADE,
@@ -132,36 +169,43 @@ CREATE TABLE cursos_usuario (
   created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Entrevistas realizadas
 CREATE TABLE entrevistas (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   user_id UUID REFERENCES profiles(id) ON DELETE CASCADE,
   trail_id TEXT NOT NULL,
+  job_title TEXT,
   nivel TEXT NOT NULL,
-  score INTEGER DEFAULT 0,
+  score FLOAT DEFAULT 0,
   total INTEGER DEFAULT 0,
+  feedback TEXT,
   done_at TIMESTAMPTZ DEFAULT NOW()
 );
 
 -- Row Level Security
-ALTER TABLE profiles          ENABLE ROW LEVEL SECURITY;
-ALTER TABLE progresso         ENABLE ROW LEVEL SECURITY;
+ALTER TABLE profiles             ENABLE ROW LEVEL SECURITY;
+ALTER TABLE progresso            ENABLE ROW LEVEL SECURITY;
 ALTER TABLE exercicios_resultado ENABLE ROW LEVEL SECURITY;
-ALTER TABLE cursos_usuario    ENABLE ROW LEVEL SECURITY;
-ALTER TABLE entrevistas       ENABLE ROW LEVEL SECURITY;
+ALTER TABLE vocab_resultado      ENABLE ROW LEVEL SECURITY;
+ALTER TABLE cursos_usuario       ENABLE ROW LEVEL SECURITY;
+ALTER TABLE entrevistas          ENABLE ROW LEVEL SECURITY;
 
--- Políticas de acesso
-CREATE POLICY "profiles: own data"    ON profiles          FOR ALL USING (auth.uid() = id) WITH CHECK (auth.uid() = id);
-CREATE POLICY "progresso: own data"   ON progresso         FOR ALL USING (auth.uid() = user_id);
-CREATE POLICY "exercicios: own data"  ON exercicios_resultado FOR ALL USING (auth.uid() = user_id);
-CREATE POLICY "cursos: own data"      ON cursos_usuario    FOR ALL USING (auth.uid() = user_id);
-CREATE POLICY "entrevistas: own data" ON entrevistas       FOR ALL USING (auth.uid() = user_id);
-
--- Ranking público (leitura apenas)
-CREATE POLICY "profiles: public read" ON profiles FOR SELECT USING (true);
+-- Políticas
+CREATE POLICY "own" ON profiles          FOR ALL USING (auth.uid() = id) WITH CHECK (auth.uid() = id);
+CREATE POLICY "pub" ON profiles          FOR SELECT USING (true);
+CREATE POLICY "own" ON progresso         FOR ALL USING (auth.uid() = user_id);
+CREATE POLICY "own" ON exercicios_resultado FOR ALL USING (auth.uid() = user_id);
+CREATE POLICY "own" ON vocab_resultado   FOR ALL USING (auth.uid() = user_id);
+CREATE POLICY "own" ON cursos_usuario    FOR ALL USING (auth.uid() = user_id);
+CREATE POLICY "own" ON entrevistas       FOR ALL USING (auth.uid() = user_id);
 ```
 
-### 5. Rode o projeto
+### 4. Configure o Storage (para foto de perfil)
+
+No Supabase → **Storage** → **New bucket**:
+- Nome: `avatars`
+- Public bucket: ✅ sim
+
+### 5. Rode
 
 ```bash
 npm run dev
@@ -177,29 +221,34 @@ Acesse: `http://localhost:5173`
 learnpath/
 ├── src/
 │   ├── data/
-│   │   └── curriculum.js          ← 🧠 Toda a estrutura das trilhas
+│   │   ├── curriculum.js     ← 🧠 Trilhas completas (50+ módulos)
+│   │   └── english.js        ← 🇺🇸 Vocabulário, vagas e perguntas de entrevista
 │   ├── components/
 │   │   ├── layout/
-│   │   │   └── index.jsx          ← Navbar, Sidebar, AppLayout
-│   │   ├── ui/
-│   │   │   └── index.jsx          ← Button, Card, Badge, XPBar, etc.
-│   │   └── trail/
-│   │       ├── TrailTree.jsx      ← Árvore visual de aprendizado
-│   │       └── NodeModal.jsx      ← Modal de conteúdo + exercícios
+│   │   │   └── index.jsx     ← Navbar, Sidebar, MobileNav, AppLayout
+│   │   └── ui/
+│   │       └── index.jsx     ← Button, Card, Badge, XPBar, Spinner, etc.
 │   ├── hooks/
-│   │   └── useAuth.jsx            ← Context de autenticação
+│   │   └── useAuth.jsx       ← Context de autenticação
 │   ├── services/
 │   │   └── supabase/
-│   │       ├── client.js          ← Instância do Supabase
-│   │       └── db.js              ← Todas as operações do banco
+│   │       ├── client.js     ← Instância do Supabase
+│   │       └── db.js         ← Todas as operações do banco
 │   ├── lib/
-│   │   └── gamification.js        ← XP, níveis, títulos
+│   │   └── gamification.js   ← XP, níveis, títulos, metadata
 │   ├── pages/
-│   │   └── index.jsx              ← Todas as páginas
+│   │   ├── Landing.jsx       ← Página inicial pública
+│   │   ├── Auth.jsx          ← Register, Login, ConfirmEmail
+│   │   ├── Dashboard.jsx     ← Trilha + árv. de módulos + modal de conteúdo
+│   │   ├── English.jsx       ← Flashcards, quiz e guia de pronúncia
+│   │   ├── Interview.jsx     ← Simulador de entrevistas com avaliação
+│   │   ├── ProgressAndCourses.jsx ← Progresso e cursos personalizados
+│   │   ├── Ranking.jsx       ← Ranking global com pódio
+│   │   └── Profile.jsx       ← Perfil com upload de foto
 │   ├── styles/
-│   │   └── globals.css
-│   ├── App.jsx                    ← Roteamento e guards
-│   └── main.jsx                   ← Entry point
+│   │   └── globals.css       ← Design system completo
+│   ├── App.jsx               ← Roteamento e guards
+│   └── main.jsx              ← Entry point
 ├── .env.example
 ├── .gitignore
 └── README.md
@@ -207,76 +256,121 @@ learnpath/
 
 ---
 
-## 🤝 Contribuindo
+## 🤝 Como Contribuir
 
-Este projeto foi desenhado para crescer com contribuições da comunidade!
+### Adicionando módulos às trilhas
 
-### Adicionando novos módulos à trilha
-
-Edite o arquivo `src/data/curriculum.js`. A estrutura de um módulo é:
+Edite `src/data/curriculum.js`. Estrutura de um módulo:
 
 ```javascript
 {
-  id: 'ds-i-06',                          // ID único
+  id: 'ds-i-09',           // ID único: [trilha]-[nivel inicial]-[número]
   title: 'Título do módulo',
-  description: 'Descrição curta',
-  level: 'iniciante',                      // iniciante | intermediario | avancado
   duration: '45 min',
-  source: 'Nome do livro — Capítulo X',   // Cite sempre a fonte!
-  topics: ['Tópico 1', 'Tópico 2'],
-  prerequisites: ['ds-i-05'],             // IDs de módulos anteriores
-  englishFocus: ['term1', 'term2'],       // Vocabulário técnico em inglês
+  source: 'Nome do livro — Capítulo X',  // SEMPRE cite a fonte!
+  description: 'Descrição curta e clara.',
+  topics: ['Tópico 1', 'Tópico 2', 'Tópico 3'],
+  prerequisites: ['ds-i-08'],   // IDs dos módulos anteriores
+  englishWords: [
+    {
+      word: 'clustering',
+      pt: 'agrupamento',
+      pronunciation: 'ˈklʌstərɪŋ',   // Notação IPA
+      example: 'K-means is a clustering algorithm.',
+      tip: 'Dica extra sobre uso ou contexto (opcional).',
+    }
+  ],
+  englishPhrases: [
+    { en: 'We need to choose the number of clusters.', pt: 'Precisamos escolher o número de clusters.' }
+  ],
   exercises: [
     {
       id: 'e1',
-      question: 'Pergunta em inglês?',
-      options: ['Opção A', 'Opção B', 'Opção C', 'Opção D'],
-      answer: 0,                          // Índice da resposta correta
-      explanation: 'Por que esta é a resposta...',
+      question: 'What is the main limitation of K-Means?',
+      options: ['Option A', 'Option B', 'Option C', 'Option D'],
+      answer: 0,   // Índice da resposta correta (0-3)
+      explanation: 'Explicação detalhada de por que esta é a resposta.',
     }
   ],
 }
 ```
 
-### Adicionando perguntas de entrevista
+### Adicionando vocabulário
 
-Edite a constante `INTERVIEW_QUESTIONS` no mesmo arquivo:
+Edite `src/data/english.js`, seção `VOCAB_SETS`:
 
 ```javascript
-{
-  id: 'dsiq6',
-  question: 'Explain the concept of...',
-  answer: 'A resposta modelo detalhada aqui...',
-  category: 'Concepts',
+{ 
+  id: 'v-ds-016', 
+  word: 'clustering', 
+  pt: 'agrupamento', 
+  pronunciation: 'ˈklʌstərɪŋ',
+  example: 'K-means is a clustering algorithm.',
+  tip: 'Dica opcional sobre uso profissional.',
 }
 ```
 
-### Adicionando novos livros como fonte
+### Adicionando vagas para entrevistas
 
-1. Adicione o PDF na pasta `/docs/references/` (não commite livros com copyright — apenas adicione a referência)
-2. Crie novos módulos citando o livro no campo `source`
-3. Abra um PR descrevendo os capítulos cobertos
+Edite `INTERVIEW_JOBS` em `src/data/english.js`:
 
-### Abrindo um Pull Request
+```javascript
+{ 
+  id: 'job-ds-07', 
+  title: 'ML Research Scientist', 
+  company: 'AI Research Lab',
+  level: 'avancado',
+  description: 'Research lab working on foundational ML breakthroughs.',
+}
+```
 
-1. Faça um fork do repositório
-2. Crie uma branch: `git checkout -b feat/nova-trilha`
-3. Commite suas mudanças: `git commit -m "feat: add advanced SQL modules"`
-4. Abra um PR descrevendo o que foi adicionado
+### Adicionando perguntas de entrevista
+
+Edite `INTERVIEW_QUESTIONS` em `src/data/english.js`:
+
+```javascript
+{ 
+  id: 'q-ds-i-11', 
+  category: 'Practical',
+  question: 'How would you explain a complex model to a non-technical executive?',
+}
+```
+
+---
+
+## 📖 Como Adicionar um PDF como Fonte
+
+1. Leia o PDF e extraia os capítulos relevantes
+2. Crie novos módulos em `curriculum.js` citando o livro no campo `source`
+3. Adicione o vocabulário técnico do livro em `english.js`
+4. Para referenciar o PDF no projeto:
+   - Crie a pasta `docs/references/`
+   - Adicione um arquivo `REFERENCES.md` com título, autor, editora e ISBN
+   - **NÃO** commite o PDF diretamente (direitos autorais)
+5. Abra um Pull Request descrevendo os capítulos adicionados
+
+**Exemplo de `REFERENCES.md`:**
+```markdown
+## Referências Bibliográficas
+
+- Grus, Joel. *Data Science from Scratch*. O'Reilly Media, 2015. ISBN: 978-1491901427
+- Goodfellow, Ian et al. *Deep Learning*. MIT Press, 2016. ISBN: 978-0262035613
+```
 
 ---
 
 ## 🔐 Segurança
 
-- O arquivo `.env` está no `.gitignore` — **nunca suba suas chaves**
-- Row Level Security (RLS) ativado no Supabase — usuários só acessam seus próprios dados
-- O ranking usa leitura pública apenas dos campos `nome`, `username` e `xp`
+- `.env` está no `.gitignore` — **nunca suba suas chaves**
+- Row Level Security (RLS) ativado — usuários só acessam seus dados
+- Ranking usa leitura pública apenas de `nome`, `username` e `xp`
+- Fotos de perfil armazenadas no Supabase Storage (bucket público)
 
 ---
 
 ## 📝 Licença
 
-MIT — use, modifique e distribua livremente. Se usar como base para um projeto, um crédito é bem-vindo! ⭐
+MIT — use, modifique e distribua livremente.
 
 ---
 
