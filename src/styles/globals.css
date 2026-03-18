@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #07090f;
+  --bg2: #0c0f1a;
+  --card: #111624;
+  --card2: #161d2e;
+  --border: #1c2840;
+  --text: #eef2ff;
+  --text2: #8899bb;
+  --text3: #4a5980;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; }
+h1,h2,h3,h4 { font-family: 'Syne', sans-serif; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+.grad-ds  { background: linear-gradient(135deg, #3b82f6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.grad-ai  { background: linear-gradient(135deg, #8b5cf6, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.grad-pr  { background: linear-gradient(135deg, #10b981, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.grad-logo{ background: linear-gradient(135deg, #60a5fa, #a78bfa, #34d399); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+@keyframes fadeIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+.animate-fade-in { animation: fadeIn 0.4s ease; }
+.spin { animation: spin 1s linear infinite; }
+input, select, textarea { background: var(--bg2) !important; color: var(--text) !important; border: 1px solid var(--border) !important; border-radius: 10px !important; padding: 10px 14px !important; font-family: 'DM Sans', sans-serif !important; font-size: 14px !important; outline: none !important; width: 100% !important; transition: border-color .2s !important; }
+input:focus, select:focus, textarea:focus { border-color: #3b82f6 !important; }
+input::placeholder { color: var(--text3) !important; }
+select option { background: var(--bg2); }
