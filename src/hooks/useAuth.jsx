@@ -17,8 +17,26 @@ export function AuthProvider({ children }) {
         .from('profiles')
         .select('*')
         .eq('id', uid)
-        .single()
-      if (!error && data) setProfile(data)
+        .maybeSingle()
+
+      if (data) {
+        setProfile(data)
+      } else {
+        // Profile missing — create it from auth metadata
+        const { data: { user: authUser } } = await supabase.auth.getUser()
+        const meta = authUser?.user_metadata || {}
+        const fallback = {
+          id: uid,
+          nome: meta.nome || authUser?.email?.split('@')[0] || 'Usuário',
+          username: meta.username || uid.slice(0, 8),
+          email: authUser?.email || '',
+          xp: 0,
+          nivel_ingles: 'iniciante',
+          trilha_ativa: 'data-science',
+        }
+        await supabase.from('profiles').upsert(fallback)
+        setProfile(fallback)
+      }
     } catch (e) {
       console.error('loadProfile error:', e)
     }

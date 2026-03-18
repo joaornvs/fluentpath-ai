@@ -75,7 +75,7 @@ function LevelSection({ levelKey, nodes, completedIds, onNodeClick }) {
       {open && (
         <div className="anim-up">
           {nodes.map((node, i) => {
-            const unlocked = node.prerequisites.every(p => completedIds.has(p)) || node.prerequisites.length === 0
+            const prereqs = node.prerequisites || []; const unlocked = prereqs.length === 0 || prereqs.every(p => completedIds.has(p))
             const completed = completedIds.has(node.id)
             return (
               <div key={node.id}>

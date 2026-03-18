@@ -18,6 +18,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 1',
         description:'Visão geral do campo, papel do cientista de dados e o pipeline completo.',
         topics:['O campo de Data Science','Tipos de problemas','Ferramentas: Python, SQL, estatística','Pipeline de dados','Perfil do profissional'],
+        prerequisites: [],
         englishWords:[
           { word:'dataset',      pt:'conjunto de dados', pronunciation:'ˈdeɪtəset',   example:'The dataset contains 10,000 rows.' },
           { word:'pipeline',     pt:'fluxo de dados',    pronunciation:'ˈpaɪplaɪn',   example:'Our data pipeline runs every hour.' },
@@ -40,6 +41,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 2',
         description:'Fundamentos de Python com foco em manipulação de dados.',
         topics:['Tipos de dados','Listas e dicionários','Funções e lambdas','List comprehensions','Generators e iteradores'],
+        prerequisites: [],
         englishWords:[
           { word:'list',          pt:'lista',            pronunciation:'lɪst',        example:'Create a list of numbers.' },
           { word:'dictionary',    pt:'dicionário',       pronunciation:'ˈdɪkʃəneri',  example:'A dictionary stores key-value pairs.' },
@@ -62,6 +64,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 4',
         description:'Álgebra linear e operações vetorizadas com NumPy.',
         topics:['Arrays NumPy','Broadcasting','Operações matriciais','Indexing e slicing','Vetores e normas'],
+        prerequisites: [],
         englishWords:[
           { word:'array',     pt:'arranjo/vetor',    pronunciation:'əˈreɪ',     example:'Create a NumPy array from a list.' },
           { word:'scalar',    pt:'escalar',          pronunciation:'ˈskeɪlər',  example:'Multiply the array by a scalar.' },
@@ -83,6 +86,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 9',
         description:'Manipulação e análise de dados tabulares com Pandas.',
         topics:['Series e DataFrame','Indexing e seleção','GroupBy e agregações','Merge e join','Lidando com NaN'],
+        prerequisites: [],
         englishWords:[
           { word:'dataframe',  pt:'tabela de dados',  pronunciation:'ˈdeɪtəfreɪm', example:'Load the CSV into a DataFrame.' },
           { word:'index',      pt:'índice',           pronunciation:'ˈɪndeks',      example:'Set the date column as the index.' },
@@ -105,6 +109,7 @@ export const DATA_SCIENCE = {
         source:'OpenIntro Statistics — Cap. 1 + Data Science from Scratch — Cap. 5',
         description:'Medidas de tendência central, dispersão e distribuições.',
         topics:['Média, mediana, moda','Variância e desvio padrão','Quartis e IQR','Histogramas e boxplots','Distribuições de frequência'],
+        prerequisites: [],
         englishWords:[
           { word:'mean',              pt:'média',              pronunciation:'miːn',          example:'The mean salary is $75,000.' },
           { word:'median',            pt:'mediana',            pronunciation:'ˈmiːdiən',      example:'Use median when data has outliers.' },
@@ -127,6 +132,7 @@ export const DATA_SCIENCE = {
         source:'OpenIntro Statistics — Cap. 3 + Data Science from Scratch — Cap. 6',
         description:'Eventos, probabilidade condicional e Teorema de Bayes.',
         topics:['Espaço amostral','Probabilidade condicional','Independência','Teorema de Bayes','Distribuição Binomial'],
+        prerequisites: [],
         englishWords:[
           { word:'probability',  pt:'probabilidade',   pronunciation:'ˌprɒbəˈbɪlɪti', example:'The probability of rain is 0.3.' },
           { word:'conditional',  pt:'condicional',     pronunciation:'kənˈdɪʃənl',     example:'Conditional probability: P(A|B).' },
@@ -148,6 +154,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 3',
         description:'Matplotlib, Seaborn e princípios de visualização eficaz.',
         topics:['Matplotlib básico','Seaborn','Tipos de gráficos','Escolha do gráfico certo','Storytelling com dados'],
+        prerequisites: [],
         englishWords:[
           { word:'scatter plot', pt:'gráfico de dispersão',pronunciation:'ˈskætər plɒt',  example:'A scatter plot shows correlation.' },
           { word:'bar chart',    pt:'gráfico de barras',   pronunciation:'bɑːr tʃɑːrt',   example:'Use a bar chart for categories.' },
@@ -169,6 +176,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 24',
         description:'SQL essencial para consultas analíticas.',
         topics:['SELECT e WHERE','JOINs','GROUP BY e HAVING','Subqueries','Window functions básicas'],
+        prerequisites: [],
         englishWords:[
           { word:'query',      pt:'consulta',        pronunciation:'ˈkwɪəri',      example:'Run this query to get monthly sales.' },
           { word:'join',       pt:'junção/unir',     pronunciation:'dʒɔɪn',        example:'Join the tables on customer_id.' },
@@ -192,6 +200,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 14 + OpenIntro Statistics — Cap. 8',
         description:'Modelagem preditiva com OLS, métricas e regularização.',
         topics:['OLS (Ordinary Least Squares)','Coeficientes e intercepto','R² e RMSE','Regressão múltipla','Regularização L1/L2'],
+        prerequisites: [],
         englishWords:[
           { word:'regression',     pt:'regressão',       pronunciation:'rɪˈɡreʃən',    example:'Linear regression predicts continuous values.' },
           { word:'coefficient',    pt:'coeficiente',     pronunciation:'ˌkəʊɪˈfɪʃənt', example:'The coefficient of age is 0.3.' },
@@ -214,6 +223,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 16, 17',
         description:'Algoritmos de classificação e métricas de avaliação.',
         topics:['Regressão Logística','K-Nearest Neighbors','Decision Trees','Confusion Matrix','Precision, Recall, F1, ROC-AUC'],
+        prerequisites: [],
         englishWords:[
           { word:'classification',pt:'classificação',   pronunciation:'ˌklæsɪfɪˈkeɪʃən',example:'This is a binary classification problem.' },
           { word:'precision',     pt:'precisão',        pronunciation:'prɪˈsɪʒən',       example:'Precision measures true positives among predictions.' },
@@ -235,6 +245,7 @@ export const DATA_SCIENCE = {
         source:'OpenIntro Statistics — Cap. 5, 6',
         description:'Testes de hipóteses, p-valor e intervalos de confiança.',
         topics:['Hipótese nula e alternativa','p-valor e nível de significância','Teste t e z','Intervalo de confiança','Erro Tipo I e II'],
+        prerequisites: [],
         englishWords:[
           { word:'hypothesis',        pt:'hipótese',           pronunciation:'haɪˈpɒθɪsɪs',    example:'State the null hypothesis clearly.' },
           { word:'p-value',           pt:'valor-p',            pronunciation:'piː vælju',         example:'The p-value is 0.03, below α=0.05.' },
@@ -256,6 +267,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 11',
         description:'Criação e transformação de features para melhorar modelos.',
         topics:['Normalização e padronização','Encoding categórico','Criação de features','Seleção de features','Imputação de dados faltantes'],
+        prerequisites: [],
         englishWords:[
           { word:'normalization',  pt:'normalização',    pronunciation:'ˌnɔːrməlaɪˈzeɪʃən',example:'Normalize features to [0,1] range.' },
           { word:'encoding',       pt:'codificação',     pronunciation:'ɪnˈkoʊdɪŋ',       example:'One-hot encode the category column.' },
@@ -277,6 +289,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 11',
         description:'Técnicas de validação para modelos não enviesados.',
         topics:['Train/Val/Test split','K-Fold Cross-Validation','Stratified CV','Bias-Variance tradeoff','Curva de aprendizado'],
+        prerequisites: [],
         englishWords:[
           { word:'cross-validation',pt:'validação cruzada',pronunciation:'krɒs ˌvælɪˈdeɪʃən',example:'Use 5-fold cross-validation.' },
           { word:'overfitting',     pt:'sobreajuste',       pronunciation:'ˌoʊvərˈfɪtɪŋ',  example:'The model is overfitting — high train, low val score.' },
@@ -298,6 +311,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 17',
         description:'Random Forests, Gradient Boosting e técnicas de ensemble.',
         topics:['Bagging e Random Forests','Boosting e AdaBoost','XGBoost e LightGBM','Feature importance','Hyperparameter tuning'],
+        prerequisites: [],
         englishWords:[
           { word:'ensemble',    pt:'conjunto de modelos',pronunciation:'ɑːnˈsɑːmbəl',  example:'Ensembles combine multiple weak learners.' },
           { word:'bagging',     pt:'amostragem com reposição',pronunciation:'ˈbæɡɪŋ',  example:'Random Forest uses bagging.' },
@@ -319,6 +333,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 19',
         description:'Algoritmos de aprendizado não-supervisionado para agrupamento.',
         topics:['K-Means','DBSCAN','Hierarchical Clustering','Escolha do k','Métricas: silhouette, inertia'],
+        prerequisites: [],
         englishWords:[
           { word:'clustering',  pt:'agrupamento',     pronunciation:'ˈklʌstərɪŋ',    example:'Clustering groups similar customers together.' },
           { word:'centroid',    pt:'centroide',       pronunciation:'ˈsentrɔɪd',      example:'Each cluster has a centroid.' },
@@ -340,6 +355,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 10',
         description:'PCA, t-SNE e UMAP para visualização e compressão.',
         topics:['PCA: eigenvectors e variância explicada','t-SNE para visualização','UMAP','Quando usar cada técnica','PCA em pipelines de ML'],
+        prerequisites: [],
         englishWords:[
           { word:'dimensionality reduction',pt:'redução de dimensionalidade',pronunciation:'dɪˌmenʃəˈnælɪti rɪˈdʌkʃən',example:'PCA is a popular dimensionality reduction technique.' },
           { word:'variance explained',pt:'variância explicada',pronunciation:'ˈveəriəns ɪkˈspleɪnd',example:'The first two components explain 85% of variance.' },
@@ -363,6 +379,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 8 + Deep Learning — Cap. 4',
         description:'Algoritmos de otimização fundamentais para ML e deep learning.',
         topics:['Gradient Descent','SGD, Adam, RMSProp','Learning rate scheduling','Convergência e critérios de parada','Minibatch training'],
+        prerequisites: [],
         englishWords:[
           { word:'gradient',    pt:'gradiente',       pronunciation:'ˈɡreɪdiənt',    example:'Compute the gradient of the loss.' },
           { word:'learning rate',pt:'taxa de aprendizado',pronunciation:'ˈlɜːrnɪŋ reɪt',example:'A high learning rate can cause divergence.' },
@@ -384,6 +401,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 23',
         description:'Análise e previsão de séries temporais.',
         topics:['Autocorrelação e ACF/PACF','Stationarity','ARIMA e SARIMA','Prophet','Feature engineering temporal'],
+        prerequisites: [],
         englishWords:[
           { word:'time series',   pt:'série temporal',  pronunciation:'taɪm ˈsɪəriːz',  example:'Forecast future sales using time series.' },
           { word:'stationarity',  pt:'estacionariedade',pronunciation:'ˌsteɪʃəˈnærɪti', example:'Check stationarity with the ADF test.' },
@@ -405,6 +423,7 @@ export const DATA_SCIENCE = {
         source:'Data Science from Scratch — Cap. 7 + OpenIntro Statistics — Cap. 7',
         description:'Design e análise de experimentos controlados.',
         topics:['Design de experimentos','Sample size e poder','Sequential testing','Multiple comparisons','Bayesian A/B testing'],
+        prerequisites: [],
         englishWords:[
           { word:'control group', pt:'grupo controle',  pronunciation:'kənˈtroʊl ɡruːp',example:'The control group sees the original version.' },
           { word:'treatment',     pt:'tratamento',      pronunciation:'ˈtriːtmənt',      example:'The treatment group sees the new feature.' },
@@ -439,6 +458,7 @@ export const ESTATISTICA = {
         source:'OpenIntro Statistics — Cap. 1',
         description:'Variáveis numéricas, categóricas e escalas de medida.',
         topics:['Dados categóricos vs numéricos','Escala nominal, ordinal, intervalar, racional','Variáveis contínuas e discretas','Coleta de dados','Tipos de amostragem'],
+        prerequisites: [],
         englishWords:[
           { word:'categorical', pt:'categórico',   pronunciation:'ˌkætəˈɡɒrɪkl',  example:'Gender is a categorical variable.' },
           { word:'numerical',   pt:'numérico',     pronunciation:'ˈnjuːmərɪkl',    example:'Age is a numerical variable.' },
@@ -460,6 +480,7 @@ export const ESTATISTICA = {
         source:'OpenIntro Statistics — Cap. 3, 4',
         description:'Distribuições discretas e contínuas mais usadas na prática.',
         topics:['Distribuição Normal','Distribuição Binomial','Distribuição de Poisson','Distribuição t de Student','Distribuição Qui-quadrado'],
+        prerequisites: [],
         englishWords:[
           { word:'normal distribution',pt:'distribuição normal',pronunciation:'ˈnɔːrməl ˌdɪstrɪˈbjuːʃən',example:'Heights follow a normal distribution.' },
           { word:'bell curve',    pt:'curva em sino',     pronunciation:'bel kɜːrv',      example:'The bell curve is symmetric around the mean.' },
@@ -481,6 +502,7 @@ export const ESTATISTICA = {
         source:'OpenIntro Statistics — Cap. 7',
         description:'Medir associação entre variáveis e entender causalidade.',
         topics:['Coeficiente de Pearson','Correlação de Spearman','Correlação vs causalidade','Simpson\'s Paradox','Variáveis confundidoras'],
+        prerequisites: [],
         englishWords:[
           { word:'correlation',  pt:'correlação',      pronunciation:'ˌkɒrəˈleɪʃən',   example:'There is a strong positive correlation.' },
           { word:'causation',    pt:'causalidade',     pronunciation:'kɔːˈzeɪʃən',      example:'Correlation does not imply causation.' },
@@ -504,6 +526,7 @@ export const ESTATISTICA = {
         source:'OpenIntro Statistics — Cap. 5, 6, 7',
         description:'ANOVA, testes não-paramétricos e comparações múltiplas.',
         topics:['ANOVA one-way e two-way','Teste de Kruskal-Wallis','Correção de Bonferroni','Qui-quadrado de aderência','Teste de Fisher'],
+        prerequisites: [],
         englishWords:[
           { word:'ANOVA',        pt:'Análise de Variância',pronunciation:'əˈnoʊvə',      example:'Use ANOVA to compare three or more groups.' },
           { word:'parametric',   pt:'paramétrico',    pronunciation:'ˌpærəˈmetrɪk',      example:'t-test is a parametric test.' },
@@ -527,6 +550,7 @@ export const ESTATISTICA = {
         source:'OpenIntro Statistics — Cap. 3 (Bayes)',
         description:'Inferência Bayesiana, MCMC e modelos probabilísticos.',
         topics:['Priori e posteriori','Credible intervals','MCMC e PyMC','Modelos hierárquicos','Comparação Bayesiana vs frequentista'],
+        prerequisites: [],
         englishWords:[
           { word:'Bayesian inference',pt:'inferência Bayesiana',pronunciation:'ˈbeɪziən ˈɪnfərəns',example:'Bayesian inference updates beliefs with data.' },
           { word:'prior distribution',pt:'distribuição a priori',pronunciation:'ˈpraɪər',example:'Set an informative prior based on domain knowledge.' },
@@ -561,6 +585,7 @@ export const GENAI = {
         source:'Deep Learning — Cap. 1, 6',
         description:'Neurônios artificiais, camadas e funções de ativação.',
         topics:['Perceptron','Funções de ativação','Forward propagation','Redes feedforward','Universal approximation'],
+        prerequisites: [],
         englishWords:[
           { word:'neuron',          pt:'neurônio',        pronunciation:'ˈnjʊərɒn',     example:'Each neuron applies a weighted sum.' },
           { word:'activation function',pt:'função de ativação',pronunciation:'ˌæktɪˈveɪʃən ˈfʌŋkʃən',example:'ReLU is the most common activation function.' },
@@ -583,6 +608,7 @@ export const GENAI = {
         source:'NLP with Transformers — Cap. 1, 2',
         description:'Como transformar texto em vetores para modelos de IA.',
         topics:['Word embeddings','Word2Vec e GloVe','Tokenização','Similaridade coseno','Vocabulário e OOV'],
+        prerequisites: [],
         englishWords:[
           { word:'embedding',   pt:'incorporação/vetor de representação',pronunciation:'ɪmˈbedɪŋ',example:'Word embeddings capture semantic meaning.' },
           { word:'token',       pt:'token/ficha',     pronunciation:'ˈtoʊkən',     example:'Split the sentence into tokens.' },
@@ -604,6 +630,7 @@ export const GENAI = {
         source:'NLP with Transformers — Cap. 3',
         description:'O mecanismo de atenção que revolucionou a IA.',
         topics:['Self-attention','Query, Key, Value','Attention scores','Softmax e pesos','Multi-head attention'],
+        prerequisites: [],
         englishWords:[
           { word:'attention',      pt:'atenção',       pronunciation:'əˈtenʃən',     example:'Self-attention relates all positions.' },
           { word:'query',          pt:'consulta',      pronunciation:'ˈkwɪəri',       example:'Q represents what we are looking for.' },
@@ -625,6 +652,7 @@ export const GENAI = {
         source:'NLP with Transformers — Cap. 3, 4',
         description:'A arquitetura completa que alimenta todos os LLMs modernos.',
         topics:['Encoder e Decoder','Positional encoding','Layer normalization','Feed-forward layers','Residual connections','BERT vs GPT'],
+        prerequisites: [],
         englishWords:[
           { word:'transformer',     pt:'transformador',  pronunciation:'trænsˈfɔːrmər',   example:'GPT is a transformer-based model.' },
           { word:'encoder',         pt:'codificador',    pronunciation:'ɪnˈkoʊdər',       example:'BERT uses an encoder-only architecture.' },
@@ -648,6 +676,7 @@ export const GENAI = {
         source:'NLP with Transformers — Cap. 2, 3',
         description:'Adaptar modelos pré-treinados para tarefas específicas.',
         topics:['Pre-training vs fine-tuning','Task-specific heads','LoRA e PEFT','Instruction tuning','RLHF básico'],
+        prerequisites: [],
         englishWords:[
           { word:'fine-tuning',    pt:'ajuste fino',     pronunciation:'faɪn tjuːnɪŋ',   example:'Fine-tune BERT on your domain data.' },
           { word:'pre-trained',    pt:'pré-treinado',    pronunciation:'priː treɪnd',      example:'Start with a pre-trained model.' },
@@ -669,6 +698,7 @@ export const GENAI = {
         source:'NLP with Transformers — Cap. 8',
         description:'Técnicas avançadas para obter o melhor dos LLMs.',
         topics:['Zero-shot e few-shot','Chain-of-thought','Role prompting','Structured output','RAG básico'],
+        prerequisites: [],
         englishWords:[
           { word:'prompt',       pt:'instrução/prompt', pronunciation:'prɒmpt',         example:'Write a clear and specific prompt.' },
           { word:'zero-shot',    pt:'sem exemplos',      pronunciation:'ˈzɪərəʊ ʃɒt',   example:'Zero-shot: no examples given.' },
@@ -690,6 +720,7 @@ export const GENAI = {
         source:'NLP with Transformers — Cap. 9',
         description:'Combinar LLMs com bases de conhecimento externas.',
         topics:['Vector databases','Semantic search','Chunking strategies','Reranking','RAG pipeline completo'],
+        prerequisites: [],
         englishWords:[
           { word:'retrieval',       pt:'recuperação',    pronunciation:'rɪˈtriːvəl',     example:'Retrieval finds relevant documents.' },
           { word:'vector database', pt:'banco de vetores',pronunciation:'ˈvektər ˈdeɪtəbeɪs',example:'Store embeddings in a vector database.' },
@@ -713,6 +744,7 @@ export const GENAI = {
         source:'NLP with Transformers — Cap. 11',
         description:'Como modelos como ChatGPT são alinhados com preferências humanas.',
         topics:['Reward model','PPO','DPO','Constitutional AI','Avaliação de alinhamento'],
+        prerequisites: [],
         englishWords:[
           { word:'alignment',    pt:'alinhamento',     pronunciation:'əˈlaɪnmənt',     example:'Alignment ensures AI behaves safely.' },
           { word:'reward model', pt:'modelo de recompensa',pronunciation:'rɪˈwɔːrd ˈmɒdəl',example:'The reward model scores responses.' },
@@ -747,6 +779,7 @@ export const PROGRAMACAO = {
         source:'Prática profissional de desenvolvimento',
         description:'Git do zero ao GitHub workflow profissional.',
         topics:['Init, add, commit','Branches e merge','Pull requests','Resolução de conflitos','Git flow'],
+        prerequisites: [],
         englishWords:[
           { word:'commit',      pt:'confirmar/salvar',pronunciation:'kəˈmɪt',      example:'Commit your changes with a clear message.' },
           { word:'branch',      pt:'ramo/ramificação', pronunciation:'bræntʃ',      example:'Create a feature branch.' },
@@ -768,6 +801,7 @@ export const PROGRAMACAO = {
         source:'Data Science from Scratch — Cap. 9',
         description:'Consumir APIs HTTP e coletar dados via Python.',
         topics:['HTTP e métodos REST','Biblioteca requests','Autenticação Bearer/OAuth','Paginação','Rate limiting'],
+        prerequisites: [],
         englishWords:[
           { word:'API',         pt:'interface de programação',pronunciation:'eɪ piː aɪ',  example:'Use the REST API to fetch data.' },
           { word:'endpoint',    pt:'ponto de extremidade',pronunciation:'ˈendpɔɪnt',     example:'Call the /users endpoint.' },
@@ -789,6 +823,7 @@ export const PROGRAMACAO = {
         source:'Prática profissional de MLOps',
         description:'Containerização de projetos de dados e ML.',
         topics:['O que é Docker e por que usar','Dockerfile','Imagens e containers','Docker Compose','Boas práticas'],
+        prerequisites: [],
         englishWords:[
           { word:'container',   pt:'container/contêiner',pronunciation:'kənˈteɪnər',    example:'Run the app in a Docker container.' },
           { word:'image',       pt:'imagem',           pronunciation:'ˈɪmɪdʒ',           example:'Build the Docker image.' },
@@ -812,6 +847,7 @@ export const PROGRAMACAO = {
         source:'Data Science from Scratch — Cap. 2',
         description:'Decorators, generators, async e padrões avançados.',
         topics:['Decorators','Context managers','Generators e yield','Async/await','Type hints e mypy'],
+        prerequisites: [],
         englishWords:[
           { word:'decorator',    pt:'decorador',       pronunciation:'ˈdekəreɪtər',     example:'Use @timer to measure execution time.' },
           { word:'generator',    pt:'gerador',         pronunciation:'ˈdʒenəreɪtər',    example:'Generators yield values lazily.' },
@@ -833,6 +869,7 @@ export const PROGRAMACAO = {
         source:'Prática profissional de MLOps',
         description:'Servir modelos de ML em produção com FastAPI e monitoramento.',
         topics:['FastAPI para model serving','Monitoramento de drift','Feature stores','Pipelines MLflow','A/B testing de modelos'],
+        prerequisites: [],
         englishWords:[
           { word:'deployment',   pt:'implantação',     pronunciation:'dɪˈplɔɪmənt',    example:'Deploy the model to production.' },
           { word:'inference',    pt:'inferência',      pronunciation:'ˈɪnfərəns',       example:'Inference latency must be under 100ms.' },
@@ -856,6 +893,7 @@ export const PROGRAMACAO = {
         source:'Prática profissional de engenharia de ML',
         description:'Arquitetura de sistemas de ML em larga escala.',
         topics:['Feature stores','Streaming vs batch','Distributed training','Model registries','CI/CD para ML'],
+        prerequisites: [],
         englishWords:[
           { word:'scalability',  pt:'escalabilidade',  pronunciation:'ˌskeɪləˈbɪlɪti',  example:'Design for scalability from day one.' },
           { word:'fault tolerance',pt:'tolerância a falhas',pronunciation:'fɔːlt ˈtɒlərəns',example:'Build fault-tolerant pipelines.' },
