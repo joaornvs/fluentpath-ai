@@ -61,27 +61,35 @@ export default function Interview() {
 
   async function finishInterview() {
     setEvaluating(true)
-    const evals = questions.map(q => ({
-      question: q,
-      answer: answers[q.id] || '',
-      eval: evaluateAnswer(q.question, answers[q.id] || ''),
-    }))
-    setEvaluations(evals)
+    try {
+      const evals = questions.map(q => ({
+        question: q,
+        answer: answers[q.id] || '',
+        eval: evaluateAnswer(q.question, answers[q.id] || ''),
+      }))
+      setEvaluations(evals)
 
-    const avgScore = evals.reduce((a,e) => a + (e.eval.overall||0), 0) / evals.length
-    const avgGrammar    = Math.round(evals.reduce((a,e) => a + e.eval.grammar, 0) / evals.length)
-    const avgVocab      = Math.round(evals.reduce((a,e) => a + e.eval.vocabulary, 0) / evals.length)
-    const avgClarity    = Math.round(evals.reduce((a,e) => a + e.eval.clarity, 0) / evals.length)
-    const avgRelevance  = Math.round(evals.reduce((a,e) => a + e.eval.relevance, 0) / evals.length)
+      const avgScore = evals.reduce((a,e) => a + (e.eval.overall||0), 0) / Math.max(evals.length, 1)
 
-    if (user) {
-      const newXP = await saveInterviewResult(user.id, selectedTrail, selectedJob?.title||'', selectedLevel, avgScore/10, questions.length, JSON.stringify({ avgGrammar, avgVocab, avgClarity, avgRelevance }))
-      if (newXP) refreshProfile({ xp: newXP })
+      if (user) {
+        try {
+          const newXP = await saveInterviewResult(
+            user.id, selectedTrail, selectedJob?.title||'', selectedLevel,
+            avgScore/10, questions.length,
+            JSON.stringify({ grammar: Math.round(avgScore), vocabulary: Math.round(avgScore), clarity: Math.round(avgScore), relevance: Math.round(avgScore) })
+          )
+          if (newXP) refreshProfile({ xp: newXP })
+        } catch(e) { console.error('saveInterview error:', e) }
+      }
+
+      setView(VIEWS.RESULTS)
+      toast.success('Entrevista concluída! 🎉')
+    } catch(err) {
+      console.error('finishInterview error:', err)
+      toast.error('Erro ao processar. Tente novamente.')
+    } finally {
+      setEvaluating(false)
     }
-
-    setEvaluating(false)
-    setView(VIEWS.RESULTS)
-    toast.success('Entrevista concluída! 🎉')
   }
 
   const jobList = INTERVIEW_JOBS[selectedTrail] || []

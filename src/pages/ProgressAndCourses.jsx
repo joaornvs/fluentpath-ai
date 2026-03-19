@@ -21,9 +21,18 @@ export function Progress() {
       .finally(() => setLoading(false))
   }, [user])
 
-  if (!profile) return <AppLayout><div className="flex justify-center items-center h-64"><Spinner size="lg"/></div></AppLayout>
+  if (!profile) return (
+    <AppLayout>
+      <div className="p-4 sm:p-6 lg:p-8 max-w-2xl mx-auto">
+        <div className="skeleton h-32 rounded-2xl mb-5"/>
+        <div className="grid grid-cols-2 gap-3">
+          {[1,2,3].map(i => <div key={i} className="skeleton h-24 rounded-2xl"/>)}
+        </div>
+      </div>
+    </AppLayout>
+  )
 
-  const lvl = getLevelData(profile.xp || 0)
+  const lvl = getLevelData(profile?.xp || 0)
   const title = getLevelTitle(lvl.level)
 
   const byTrail = ALL_TRAILS.map(t => {
@@ -49,7 +58,7 @@ export function Progress() {
             <span className="font-heading font-bold text-base">{lvl.level}</span>
           </ProgressRing>
           <div className="flex-1 min-w-0">
-            <p className="font-heading text-xl font-bold">{profile.nome}</p>
+            <p className="font-heading text-xl font-bold">{profile?.nome}</p>
             <p className="text-sm text-[#8899bb] mb-2">{title}</p>
             <div className="flex justify-between text-xs text-[#4a5980] mb-1">
               <span>Nível {lvl.level}</span><span>{lvl.current}/{lvl.needed} XP</span>
@@ -57,7 +66,7 @@ export function Progress() {
             <XPBar pct={lvl.pct}/>
           </div>
           <div className="text-right">
-            <p className="font-heading text-3xl font-bold text-blue-300">{(profile.xp||0).toLocaleString()}</p>
+            <p className="font-heading text-3xl font-bold text-blue-300">{(profile?.xp||0).toLocaleString()}</p>
             <p className="text-xs text-[#4a5980]">XP total</p>
           </div>
         </Card>
