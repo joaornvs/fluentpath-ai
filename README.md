@@ -38,7 +38,7 @@ Cada módulo das trilhas inclui:
 ### 🗺️ Trilhas de Aprendizado
 - **4 trilhas:** Data Science · GenAI & LLMs · Programação · Estatística
 - **3 níveis por trilha:** Iniciante → Intermediário → Avançado
-- **50+ módulos** com sistema de pré-requisitos (desbloqueio progressivo)
+- **Módulos** com sistema de pré-requisitos (desbloqueio progressivo)
 - Árvore visual com conectores mostrando a progressão
 - Cada módulo: tópicos, vocabulário EN/PT com pronúncia, frases práticas, exercícios e fonte bibliográfica
 
