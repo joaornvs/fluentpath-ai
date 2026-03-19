@@ -14,7 +14,8 @@ function TrailNode({ node, completed, unlocked, onClick }) {
     intermediario: { border: '#f59e0b', bg: 'rgba(245,158,11,0.06)',  text: '#f59e0b' },
     avancado:      { border: '#ef4444', bg: 'rgba(239,68,68,0.06)',   text: '#ef4444' },
   }
-  const c = levelColors[node.level]
+  // Fallback safe — never crash if level is missing
+  const c = levelColors[node.level] || levelColors.iniciante
   const statusIcon = completed ? '✅' : unlocked ? '🔓' : '🔒'
 
   return (
@@ -52,7 +53,7 @@ function Connector({ done }) {
 // ── Level Section ──────────────────────────────────────────
 function LevelSection({ levelKey, nodes, completedIds, onNodeClick }) {
   const [open, setOpen] = useState(levelKey === 'iniciante')
-  const meta = LEVEL_META[levelKey]
+  const meta = LEVEL_META[levelKey] || LEVEL_META['iniciante']
   const done = nodes.filter(n => completedIds.has(n.id)).length
 
   return (
@@ -81,7 +82,7 @@ function LevelSection({ levelKey, nodes, completedIds, onNodeClick }) {
               <div key={node.id}>
                 {i > 0 && <Connector done={completedIds.has(nodes[i-1].id)}/>}
                 <div className="flex justify-center">
-                  <TrailNode node={node} completed={completed} unlocked={unlocked} onClick={onNodeClick}/>
+                  <TrailNode node={{...node, level: levelKey}} completed={completed} unlocked={unlocked} onClick={onNodeClick}/>
                 </div>
               </div>
             )
@@ -100,7 +101,7 @@ function NodeModal({ node, completed, onComplete, onClose }) {
   const [score, setScore] = useState(0)
 
   if (!node) return null
-  const meta = LEVEL_META[node.level]
+  const meta = LEVEL_META[node.level] || LEVEL_META['iniciante']
   const hasEx = node.exercises?.length > 0
 
   function handleSubmit() {
