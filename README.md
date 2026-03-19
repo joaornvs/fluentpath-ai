@@ -1,23 +1,26 @@
 # ⚡ LearnPath
 
-> Plataforma de aprendizado de tecnologia com foco em **inglês técnico**. Trilhas de Data Science, GenAI, Programação e Estatística — baseadas nos melhores livros do mercado.
+> Plataforma de aprendizado de tecnologia com foco em **inglês técnico**. Trilhas progressivas de Data Science, GenAI, Programação e Estatística — baseadas nos melhores livros técnicos do mercado.
 
 [![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-5-646cff?logo=vite&logoColor=white)](https://vitejs.dev)
 [![Supabase](https://img.shields.io/badge/Supabase-Database-3ecf8e?logo=supabase&logoColor=white)](https://supabase.com)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-3-06b6d4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)](https://vercel.com)
+
+**🔗 Site ao vivo:** [fluentpath-ai.vercel.app](https://fluentpath-ai.vercel.app)
 
 ---
 
 ## 📖 Sobre o Projeto
 
-O **LearnPath** foi criado para profissionais brasileiros que querem aprender tecnologia **e** melhorar o inglês técnico ao mesmo tempo. Cada módulo de trilha inclui:
+O **LearnPath** foi criado para profissionais e estudantes brasileiros de tecnologia que querem aprender conteúdo técnico **e** melhorar o inglês ao mesmo tempo.
 
-- O conteúdo técnico do tópico
-- Vocabulário com pronúncia em IPA
-- Tradução e exemplos de uso real
+Cada módulo das trilhas inclui:
+- Conteúdo técnico baseado em capítulos de livros reais
+- Vocabulário com pronúncia IPA e tradução PT/EN
 - Frases práticas para o dia a dia profissional
-- Exercícios de fixação baseados no livro de referência
+- Exercícios de múltipla escolha com explicações detalhadas
 
 ### 📚 Fontes Bibliográficas
 
@@ -25,8 +28,8 @@ O **LearnPath** foi criado para profissionais brasileiros que querem aprender te
 |-------|-----------|--------|
 | *Data Science from Scratch* | Joel Grus (O'Reilly, 2015) | Data Science + Programação |
 | *Deep Learning* | Goodfellow, Bengio, Courville (MIT Press, 2016) | GenAI |
-| *OpenIntro Statistics* | Diez, Çetinkaya-Rundel, Barr (4ª ed.) | Estatística + Data Science |
-| *Natural Language Processing with Transformers* | Tunstall et al. (O'Reilly, 2022) | GenAI |
+| *OpenIntro Statistics* | Diez, Çetinkaya-Rundel, Barr (4ª ed.) | Estatística |
+| *NLP with Transformers* | Tunstall et al. (O'Reilly, 2022) | GenAI |
 
 ---
 
@@ -36,36 +39,42 @@ O **LearnPath** foi criado para profissionais brasileiros que querem aprender te
 - **4 trilhas:** Data Science · GenAI & LLMs · Programação · Estatística
 - **3 níveis por trilha:** Iniciante → Intermediário → Avançado
 - **50+ módulos** com sistema de pré-requisitos (desbloqueio progressivo)
-- Cada módulo: tópicos, vocabulário EN/PT, pronúncia, frases, exercícios e fonte
+- Árvore visual com conectores mostrando a progressão
+- Cada módulo: tópicos, vocabulário EN/PT com pronúncia, frases práticas, exercícios e fonte bibliográfica
 
-### 🇺🇸 Inglês Técnico Integrado
+### 🇺🇸 Inglês Técnico
 - **Flashcards** com pronúncia IPA e tradução
-- **Quiz de vocabulário** com múltipla escolha
-- **Guia de pronúncia** com exemplos reais
-- Frases práticas para reuniões, apresentações e entrevistas
-
-### 🎤 Simulador de Entrevistas
-- **20+ vagas** por área (Data Scientist, ML Engineer, LLM Engineer...)
-- Perguntas em inglês por nível (iniciante, intermediário, avançado)
-- Avaliação automática de gramática, vocabulário, clareza e relevância
-- Feedback detalhado com dicas de melhoria e nota por resposta
-- Histórico de entrevistas com evolução
+- **Quiz de vocabulário** com múltipla escolha e feedback imediato
+- **Guia de pronúncia** com busca e exemplos reais de uso
+- Vocabulário integrado a cada módulo das trilhas
 
 ### 🏆 Gamificação
-- XP por ação (módulo: +15, exercício correto: +10, entrevista: variável)
-- Níveis de 1 a 100 com títulos progressivos
+- XP por ação: módulo completo (+15), exercício correto (+10), vocabulário (+5)
+- 100 níveis com títulos progressivos (de "Rookie Learner" a "English Legend")
 - Ranking global com pódio e filtro por trilha
 
 ### 👤 Perfil
 - Upload de foto de perfil
-- Estatísticas detalhadas (módulos, entrevistas, XP)
+- Estatísticas de progresso (módulos, XP, nível)
 - Preferências de trilha e nível de inglês
-- Histórico de progresso
+
+### 📈 Progresso
+- Progresso por trilha com barra visual
+- Histórico de módulos concluídos com data
+- Evolução de XP e nível
 
 ### ➕ Cursos Personalizados
-- Adicione seus próprios recursos (cursos, livros, tutoriais)
-- Categorização por área e nível
-- Links para recursos externos
+- Adicione seus próprios recursos (cursos externos, livros, tutoriais, artigos)
+- Categorização por área, nível e duração
+- Links clicáveis para recursos externos
+
+---
+
+## 🚫 O que foi removido
+
+| Funcionalidade | Motivo |
+|----------------|--------|
+| Simulador de Entrevistas | Removido para simplificar a experiência e melhorar a performance geral |
 
 ---
 
@@ -75,10 +84,27 @@ O **LearnPath** foi criado para profissionais brasileiros que querem aprender te
 |--------|-----------|
 | Frontend | React 18 + Vite 5 |
 | Estilo | Tailwind CSS 3 |
-| Auth + DB | Supabase (PostgreSQL + Auth + Storage) |
+| Auth + DB + Storage | Supabase (PostgreSQL) |
 | Roteamento | React Router v6 |
 | Notificações | react-hot-toast |
+| Deploy | Vercel (CI/CD automático via GitHub) |
 | Fontes | Plus Jakarta Sans + Syne + JetBrains Mono |
+
+---
+
+## ⚡ Performance
+
+O LearnPath usa um sistema de **cache em memória** para evitar queries desnecessárias ao banco:
+
+| Dado | TTL do Cache |
+|------|-------------|
+| Perfil do usuário | 30 segundos |
+| Progresso das trilhas | 20 segundos |
+| Vocabulário aprendido | 15 segundos |
+| Ranking global | 60 segundos |
+| Cursos | 10 segundos |
+
+O perfil carrega em background sem bloquear a navegação. Timeout máximo de 4 segundos — nunca trava infinitamente.
 
 ---
 
@@ -87,8 +113,8 @@ O **LearnPath** foi criado para profissionais brasileiros que querem aprender te
 ### 1. Clone e instale
 
 ```bash
-git clone https://github.com/seu-usuario/learnpath.git
-cd learnpath
+git clone https://github.com/joaornvs/fluentpath-ai.git
+cd fluentpath-ai
 npm install
 ```
 
@@ -105,12 +131,11 @@ VITE_SUPABASE_URL=https://seu-projeto.supabase.co
 VITE_SUPABASE_ANON_KEY=sua_chave_anon_publica
 ```
 
-### 3. Configure o banco de dados
+### 3. Configure o banco de dados no Supabase
 
 Execute no **SQL Editor** do seu projeto Supabase:
 
 ```sql
--- Apaga tabelas antigas (cuidado em produção!)
 DROP TABLE IF EXISTS entrevistas CASCADE;
 DROP TABLE IF EXISTS cursos_usuario CASCADE;
 DROP TABLE IF EXISTS vocab_resultado CASCADE;
@@ -118,7 +143,6 @@ DROP TABLE IF EXISTS exercicios_resultado CASCADE;
 DROP TABLE IF EXISTS progresso CASCADE;
 DROP TABLE IF EXISTS profiles CASCADE;
 
--- Cria tabelas
 CREATE TABLE profiles (
   id UUID REFERENCES auth.users ON DELETE CASCADE PRIMARY KEY,
   nome TEXT NOT NULL,
@@ -126,7 +150,6 @@ CREATE TABLE profiles (
   email TEXT NOT NULL,
   xp INTEGER DEFAULT 0,
   nivel_ingles TEXT DEFAULT 'iniciante',
-  nivel_escolhido TEXT DEFAULT 'iniciante',
   trilha_ativa TEXT DEFAULT 'data-science',
   foto_url TEXT,
   created_at TIMESTAMPTZ DEFAULT NOW(),
@@ -181,7 +204,6 @@ CREATE TABLE entrevistas (
   done_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Row Level Security
 ALTER TABLE profiles             ENABLE ROW LEVEL SECURITY;
 ALTER TABLE progresso            ENABLE ROW LEVEL SECURITY;
 ALTER TABLE exercicios_resultado ENABLE ROW LEVEL SECURITY;
@@ -189,21 +211,20 @@ ALTER TABLE vocab_resultado      ENABLE ROW LEVEL SECURITY;
 ALTER TABLE cursos_usuario       ENABLE ROW LEVEL SECURITY;
 ALTER TABLE entrevistas          ENABLE ROW LEVEL SECURITY;
 
--- Políticas
-CREATE POLICY "own" ON profiles          FOR ALL USING (auth.uid() = id) WITH CHECK (auth.uid() = id);
+CREATE POLICY "own" ON profiles          FOR ALL    USING (auth.uid() = id) WITH CHECK (auth.uid() = id);
 CREATE POLICY "pub" ON profiles          FOR SELECT USING (true);
-CREATE POLICY "own" ON progresso         FOR ALL USING (auth.uid() = user_id);
+CREATE POLICY "own" ON progresso         FOR ALL    USING (auth.uid() = user_id);
 CREATE POLICY "own" ON exercicios_resultado FOR ALL USING (auth.uid() = user_id);
-CREATE POLICY "own" ON vocab_resultado   FOR ALL USING (auth.uid() = user_id);
-CREATE POLICY "own" ON cursos_usuario    FOR ALL USING (auth.uid() = user_id);
-CREATE POLICY "own" ON entrevistas       FOR ALL USING (auth.uid() = user_id);
+CREATE POLICY "own" ON vocab_resultado   FOR ALL    USING (auth.uid() = user_id);
+CREATE POLICY "own" ON cursos_usuario    FOR ALL    USING (auth.uid() = user_id);
+CREATE POLICY "own" ON entrevistas       FOR ALL    USING (auth.uid() = user_id);
 ```
 
-### 4. Configure o Storage (para foto de perfil)
+### 4. Configure o Storage (foto de perfil)
 
 No Supabase → **Storage** → **New bucket**:
 - Nome: `avatars`
-- Public bucket: ✅ sim
+- Public bucket: ✅ ativado
 
 ### 5. Rode
 
@@ -221,34 +242,34 @@ Acesse: `http://localhost:5173`
 learnpath/
 ├── src/
 │   ├── data/
-│   │   ├── curriculum.js     ← 🧠 Trilhas completas (50+ módulos)
-│   │   └── english.js        ← 🇺🇸 Vocabulário, vagas e perguntas de entrevista
+│   │   ├── curriculum.js          ← 🧠 Trilhas completas (50+ módulos)
+│   │   └── english.js             ← 🇺🇸 Vocabulário técnico por área
 │   ├── components/
 │   │   ├── layout/
-│   │   │   └── index.jsx     ← Navbar, Sidebar, MobileNav, AppLayout
+│   │   │   └── index.jsx          ← Navbar, Sidebar, MobileNav, AppLayout
 │   │   └── ui/
-│   │       └── index.jsx     ← Button, Card, Badge, XPBar, Spinner, etc.
+│   │       └── index.jsx          ← Button, Card, Badge, XPBar, Spinner, etc.
 │   ├── hooks/
-│   │   └── useAuth.jsx       ← Context de autenticação
+│   │   └── useAuth.jsx            ← Context de autenticação (carregamento não bloqueante)
 │   ├── services/
 │   │   └── supabase/
-│   │       ├── client.js     ← Instância do Supabase
-│   │       └── db.js         ← Todas as operações do banco
+│   │       ├── client.js          ← Instância do Supabase
+│   │       └── db.js              ← CRUD com cache em memória
 │   ├── lib/
-│   │   └── gamification.js   ← XP, níveis, títulos, metadata
+│   │   └── gamification.js        ← XP, níveis, títulos, metadata das trilhas
 │   ├── pages/
-│   │   ├── Landing.jsx       ← Página inicial pública
-│   │   ├── Auth.jsx          ← Register, Login, ConfirmEmail
-│   │   ├── Dashboard.jsx     ← Trilha + árv. de módulos + modal de conteúdo
-│   │   ├── English.jsx       ← Flashcards, quiz e guia de pronúncia
-│   │   ├── Interview.jsx     ← Simulador de entrevistas com avaliação
+│   │   ├── Landing.jsx            ← Página inicial pública
+│   │   ├── Auth.jsx               ← Register (2 etapas), Login, ConfirmEmail
+│   │   ├── Dashboard.jsx          ← Trilhas + árvore de módulos + modal de conteúdo
+│   │   ├── English.jsx            ← Flashcards, quiz e guia de pronúncia
 │   │   ├── ProgressAndCourses.jsx ← Progresso e cursos personalizados
-│   │   ├── Ranking.jsx       ← Ranking global com pódio
-│   │   └── Profile.jsx       ← Perfil com upload de foto
+│   │   ├── Ranking.jsx            ← Ranking global com pódio
+│   │   └── Profile.jsx            ← Perfil com upload de foto
 │   ├── styles/
-│   │   └── globals.css       ← Design system completo
-│   ├── App.jsx               ← Roteamento e guards
-│   └── main.jsx              ← Entry point
+│   │   └── globals.css            ← Design system completo
+│   ├── App.jsx                    ← Roteamento e guards de autenticação
+│   └── main.jsx                   ← Entry point
+├── vercel.json                    ← Rewrites para SPA (evita 404 ao recarregar)
 ├── .env.example
 ├── .gitignore
 └── README.md
@@ -264,20 +285,20 @@ Edite `src/data/curriculum.js`. Estrutura de um módulo:
 
 ```javascript
 {
-  id: 'ds-i-09',           // ID único: [trilha]-[nivel inicial]-[número]
-  title: 'Título do módulo',
+  id: 'ds-i-09',                     // ID único — convenção: [trilha]-[nivel]-[numero]
+  title: 'Título do Módulo',
   duration: '45 min',
-  source: 'Nome do livro — Capítulo X',  // SEMPRE cite a fonte!
-  description: 'Descrição curta e clara.',
-  topics: ['Tópico 1', 'Tópico 2', 'Tópico 3'],
-  prerequisites: ['ds-i-08'],   // IDs dos módulos anteriores
+  source: 'Nome do Livro — Capítulo X',  // SEMPRE cite a fonte!
+  description: 'Descrição curta e objetiva.',
+  topics: ['Tópico 1', 'Tópico 2'],
+  prerequisites: ['ds-i-08'],             // IDs de módulos anteriores (ou [] para nenhum)
   englishWords: [
     {
       word: 'clustering',
       pt: 'agrupamento',
-      pronunciation: 'ˈklʌstərɪŋ',   // Notação IPA
+      pronunciation: 'ˈklʌstərɪŋ',       // Notação IPA
       example: 'K-means is a clustering algorithm.',
-      tip: 'Dica extra sobre uso ou contexto (opcional).',
+      tip: 'Dica extra de uso (opcional).',
     }
   ],
   englishPhrases: [
@@ -287,9 +308,9 @@ Edite `src/data/curriculum.js`. Estrutura de um módulo:
     {
       id: 'e1',
       question: 'What is the main limitation of K-Means?',
-      options: ['Option A', 'Option B', 'Option C', 'Option D'],
-      answer: 0,   // Índice da resposta correta (0-3)
-      explanation: 'Explicação detalhada de por que esta é a resposta.',
+      options: ['Opção A', 'Opção B', 'Opção C', 'Opção D'],
+      answer: 0,          // Índice da resposta correta (0–3)
+      explanation: 'Explicação detalhada da resposta correta.',
     }
   ],
 }
@@ -297,74 +318,45 @@ Edite `src/data/curriculum.js`. Estrutura de um módulo:
 
 ### Adicionando vocabulário
 
-Edite `src/data/english.js`, seção `VOCAB_SETS`:
+Edite `VOCAB_SETS` em `src/data/english.js`:
 
 ```javascript
-{ 
-  id: 'v-ds-016', 
-  word: 'clustering', 
-  pt: 'agrupamento', 
-  pronunciation: 'ˈklʌstərɪŋ',
-  example: 'K-means is a clustering algorithm.',
-  tip: 'Dica opcional sobre uso profissional.',
+{
+  id: 'v-ds-020',
+  word: 'overfitting',
+  pt: 'sobreajuste',
+  pronunciation: 'ˌoʊvərˈfɪtɪŋ',
+  example: 'The model is overfitting the training data.',
+  tip: 'Sinal: train accuracy alta, validation accuracy baixa.',
 }
 ```
 
-### Adicionando vagas para entrevistas
+### Como adicionar um PDF como fonte
 
-Edite `INTERVIEW_JOBS` em `src/data/english.js`:
+1. Leia o conteúdo do PDF e extraia os tópicos por capítulo
+2. Crie módulos em `curriculum.js` citando o livro no campo `source`
+3. Adicione o vocabulário técnico em `english.js`
+4. Crie `docs/references/REFERENCES.md` listando título, autor, editora e ISBN
+5. **Não commite o PDF** (direitos autorais) — apenas a referência
+6. Abra um Pull Request descrevendo os capítulos cobertos
 
-```javascript
-{ 
-  id: 'job-ds-07', 
-  title: 'ML Research Scientist', 
-  company: 'AI Research Lab',
-  level: 'avancado',
-  description: 'Research lab working on foundational ML breakthroughs.',
-}
-```
+### Pull Request
 
-### Adicionando perguntas de entrevista
-
-Edite `INTERVIEW_QUESTIONS` em `src/data/english.js`:
-
-```javascript
-{ 
-  id: 'q-ds-i-11', 
-  category: 'Practical',
-  question: 'How would you explain a complex model to a non-technical executive?',
-}
-```
-
----
-
-## 📖 Como Adicionar um PDF como Fonte
-
-1. Leia o PDF e extraia os capítulos relevantes
-2. Crie novos módulos em `curriculum.js` citando o livro no campo `source`
-3. Adicione o vocabulário técnico do livro em `english.js`
-4. Para referenciar o PDF no projeto:
-   - Crie a pasta `docs/references/`
-   - Adicione um arquivo `REFERENCES.md` com título, autor, editora e ISBN
-   - **NÃO** commite o PDF diretamente (direitos autorais)
-5. Abra um Pull Request descrevendo os capítulos adicionados
-
-**Exemplo de `REFERENCES.md`:**
-```markdown
-## Referências Bibliográficas
-
-- Grus, Joel. *Data Science from Scratch*. O'Reilly Media, 2015. ISBN: 978-1491901427
-- Goodfellow, Ian et al. *Deep Learning*. MIT Press, 2016. ISBN: 978-0262035613
+```bash
+git checkout -b feat/novos-modulos-genai
+git add .
+git commit -m "feat: add advanced RAG modules to GenAI trail"
+git push origin feat/novos-modulos-genai
 ```
 
 ---
 
 ## 🔐 Segurança
 
-- `.env` está no `.gitignore` — **nunca suba suas chaves**
-- Row Level Security (RLS) ativado — usuários só acessam seus dados
-- Ranking usa leitura pública apenas de `nome`, `username` e `xp`
-- Fotos de perfil armazenadas no Supabase Storage (bucket público)
+- `.env` está no `.gitignore` — **nunca suba suas chaves para o GitHub**
+- Row Level Security (RLS) ativado — cada usuário acessa apenas seus próprios dados
+- O ranking usa leitura pública apenas de `nome`, `username` e `xp`
+- Fotos de perfil armazenadas no Supabase Storage (bucket público para leitura)
 
 ---
 
@@ -372,9 +364,11 @@ Edite `INTERVIEW_QUESTIONS` em `src/data/english.js`:
 
 MIT — use, modifique e distribua livremente.
 
+Se o projeto te ajudou, uma ⭐ no GitHub é muito bem-vinda!
+
 ---
 
-## ⭐ Agradecimentos
+## 🙏 Agradecimentos
 
 Conteúdo baseado nos trabalhos de:
 - **Joel Grus** — *Data Science from Scratch* (O'Reilly)
