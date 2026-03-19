@@ -76,7 +76,7 @@ function WordQuiz({ words, onDone }) {
         <div className="text-5xl mb-3">{correct===words.length?'🏆':correct>words.length/2?'🎉':'💪'}</div>
         <h3 className="font-heading text-xl font-bold mb-1">{correct}/{words.length} acertos</h3>
         <p className="text-[#8899bb] text-sm mb-5">+{correct*5} XP ganhos!</p>
-        <Button onClick={onDone} fullWidth>Continuar</Button>
+        <button onClick={onDone} className="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-all">Continuar →</button>
       </div>
     )
   }
