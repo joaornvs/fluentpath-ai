@@ -6,7 +6,6 @@ import Landing           from '@/pages/Landing'
 import { Register, Login, ConfirmEmail } from '@/pages/Auth'
 import Dashboard         from '@/pages/Dashboard'
 import English           from '@/pages/English'
-import Interview         from '@/pages/Interview'
 import { Progress }      from '@/pages/ProgressAndCourses'
 import { Courses }       from '@/pages/ProgressAndCourses'
 import Ranking           from '@/pages/Ranking'
@@ -18,7 +17,6 @@ function Private({ children }) {
   if (!user) return <Navigate to="/login" replace/>
   return children
 }
-
 function PublicOnly({ children }) {
   const { user, loading } = useAuth()
   if (loading) return <LoadingScreen/>
@@ -35,7 +33,6 @@ function Router() {
       <Route path="/register"      element={<PublicOnly><Register/></PublicOnly>}/>
       <Route path="/dashboard"     element={<Private><Dashboard/></Private>}/>
       <Route path="/english"       element={<Private><English/></Private>}/>
-      <Route path="/interview"     element={<Private><Interview/></Private>}/>
       <Route path="/progress"      element={<Private><Progress/></Private>}/>
       <Route path="/courses"       element={<Private><Courses/></Private>}/>
       <Route path="/ranking"       element={<Private><Ranking/></Private>}/>
